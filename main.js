@@ -1,11 +1,10 @@
-/*tipos de variaveis*/
-var a = 5 //escopo global
-const b = 10 //escopo local
-let c = "teste" //sempre msm valor
+const array = [2,3,4,5,6];
 
-const Sub = ()=>{
+array.forEach(item=>{
+    if(item % 2 ===0){
+        console.log(`o numero ${item} é par`);
+    }else{
+        console.log(`o numero ${item} é impar`);
+    }
 
-    return 5-3;
-}
-
-console.log(Sub())
+});
